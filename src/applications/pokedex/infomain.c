@@ -708,8 +708,12 @@ int PokedexGraphics_GetAnimIDfromType(int monType)
     case TYPE_DARK:
         animID = 12;
         break;
+    case TYPE_FAIRY:
+        // TODO: temporary, points at Psychic icon (animID 15).
+        // Replace with real Fairy animation when Pokédex type sheet is extended.
+        animID = 15;
+        break;
     }
-
     return animID;
 }
 
